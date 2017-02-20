@@ -93,7 +93,7 @@ S = tf([ks], [T 1], 'inputdelay', Ttot); % S = ks/(T*s+1);
 step(S);
 xlim([0 Time(i_stable_end)-Time(i_jump_ist)]);
 ylim([0 ks+1]);
-step(ks*G);
+step(ks*G,'g');
 hold off;
 
 %%
